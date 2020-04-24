@@ -1,0 +1,41 @@
+@import url("navbar.css");
+
+#homepage {
+    background: url("../contenu/image/wizard-castle.png") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#wizard {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .9em;
+    top: 23%;
+    left: 33%;
+    text-align: center;
+    width: max-content;
+    padding: 1%;
+    color: white;
+    text-shadow: 1px 1px rgb(0,0,0,0.5);
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 3.125em solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -1.562em;
+    margin-bottom: -3.12em;
+}

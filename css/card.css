@@ -1,0 +1,29 @@
+.card-element {
+    display: inline-block;
+    margin-top: 5%;
+    height: min-content;
+    margin-left: 20%;
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.card-intitule {
+    color: #8E0EB4;
+}
+
+.card-prerequis {
+    color:#E61010;
+}
+
+.card-recompense {
+    color:#506EE8;
+}
+
+.card-element a {
+    color: black;
+}
+
+.card-element a:hover {
+    text-decoration: none;
+    color: black;
+}

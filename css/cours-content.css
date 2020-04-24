@@ -1,0 +1,26 @@
+@import "cours.css";
+@import "button.css";
+
+img.book {
+    width: 98%;
+    height: 89%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.book-bg {
+    background: url("../contenu/image/book.png") no-repeat;
+    background-size: 98% 89%;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.book-page {
+    display:inline-block;
+    margin-top: 6%;
+    margin-left: 12%;
+}

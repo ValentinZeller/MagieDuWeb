@@ -1,0 +1,16 @@
+@import "navbar.css";
+@import "card.css";
+
+.cours {
+    background: url("../contenu/image/library.png") fixed repeat-x;
+    height: 730px;
+}
+
+.cours-card {
+    background: #DCD8FE;
+}
+
+.cours-card:hover {
+    background: #F0EFFD;
+}
+

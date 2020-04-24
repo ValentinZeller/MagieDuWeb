@@ -1,0 +1,15 @@
+@import "homepage.css";
+
+h2 {
+    margin-left: 20%;
+    padding-top: 2%;
+}
+
+.xp {
+    margin: 5% 10%;
+    width: 25%;
+}
+
+.profil-txt {
+    margin-top: 5%;
+}

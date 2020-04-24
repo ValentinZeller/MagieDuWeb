@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Bellota";
+    src: url("fonts/Bellota-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Bellota-Bold";
+    src: url("fonts/Bellota-Bold.woff") format("woff")
+}
+
+h1,h2,.nav-item {
+    font-family: "Bellota";
+}
+
+.navbar {
+    background-color: #AD6BCA;
+}
+
+.nav-link,.navbar-brand {
+    color: white;
+}
+
+.active {
+    color : #cc9fff;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Magie du Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/mission.css" type="text/css" />
+
+    <script>
+        $(function () {
+            $('.drag').draggable({
+                revert:"invalid",
+                cursor:"move"
+            });
+            $('.drop').droppable({
+                greedy:true,
+                drop: function(event,ui) {
+                    joinDrag(ui.draggable,event.target);
+                }
+            });
+        });
+
+        function joinDrag($item,$container) {
+            $item.appendTo($container);
+            $item.css("top",0).css("left",0);
+        }
+
+        function verify() {
+            var bodyDrop = $(".card-body .drop");
+            console.log(bodyDrop);
+            if (bodyDrop[0].childElementCount > 0) {
+                alert("Trouvé");
+            } else {
+                alert("Faux");
+            }
+            document.location.href="index.html";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html"><h1>MagieDuWeb</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../cours/index.html">Cours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Missions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../revision.html">Révisions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../profil.html">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="homepage">
+    <div class="d-flex">
+        <div class="card-html card-element">
+            <h3>HTML</h3>
+            <div class="card-element card-head">
+                <h4>HEAD</h4>
+                <div class="drop"></div>
+            </div>
+            <div class="card-element card-body">
+                <h4>BODY</h4>
+                <div class="drop"></div>
+            </div>
+        </div>
+        <div class="card-element">
+            <div class="drag"><p>h1</p></div>
+        </div>
+    </div>
+    <button class="btn btn-primary" onclick="verify();">Valider</button>
+</div>
+
+</body>
+</html>

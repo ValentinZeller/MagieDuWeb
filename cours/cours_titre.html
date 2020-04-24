@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Magie du Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/cours-content.css" type="text/css" />
+</head>
+<body>
+<header>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html"><h1>MagieDuWeb</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Cours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../missions/index.html">Missions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../revision.html">Révisions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../profil.html">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="cours">
+    <div class="book-bg">
+        <div class="d-flex flex-row bd-highlight">
+            <div class="bd-hightlight book-page">
+                <h3>Cours sur les balises titres</h3>
+                <p>Il existe 6 balises titres :<br/>
+                    h1, h2, h3, h4, h5, h6 <br/>
+                    h1 est la balise de titre de la page.<br/>
+
+                    Les autres sont des balises de sous titres pour les sous parties<br/> de la page que l'on veut titré.<br/>
+                    Le numéro correspond alors à un niveau hiérarchique.<br/>
+
+                    Exemple :</p>
+                <pre><code>
+                &lth1&gt;Les titres&lt/h1&gt;
+                    &lth2&gt;Sous titre 1&lt/h2&gt;
+                        &lth3&gt;Sous titre 1.1&lt/h3&gt;
+                         &lth3&gt;Sous titre 1.2&lt/h2&gt;
+                    &lth2&gt;Sous titre 2&lt/h2&gt;
+                        &lth3&gt;Sous titre 2.1&lt/h3&gt;
+                            &lth4&gt;Sous titre 2.1.1&lt/h3&gt;</code>
+                </pre>
+            </div>
+            <div class="bd-hightlight book-page">
+                <h3>Résultat :</h3>
+                <h1>Les titres</h1>
+                <h2>Sous titre 1</h2>
+                <h3>Sous titre 1.1</h3>
+                <h3>Sous titre 1.2</h2>
+                    <h2>Sous titre 2</h2>
+                    <h3>Sous titre 2.1</h3>
+                    <h4>Sous titre 2.1.1</h3>
+                <a href="index.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Valider le cours</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

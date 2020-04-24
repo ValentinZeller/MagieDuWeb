@@ -1,0 +1,39 @@
+@import "homepage.css";
+@import "button.css";
+
+.revision-text {
+    text-shadow: 1px 1px 1px #b5b5b5;
+    padding: 1% 2%;
+    margin: 2% 2%;
+    display: inline-block;
+    color: #8E0EB4;
+    font-size: large;
+    font-weight: bold;
+    font-family:"Bellota-Bold"
+}
+
+.question-reponses {
+    list-style: none;
+}
+
+.question-intitule {
+    font-family:"Bellota";
+    font-size: 1.5em;
+}
+
+.question-body {
+    background: #CFD5FF;
+    padding: 1% 2%;
+    margin: 2% 3%;
+    display: inline-block;
+    box-shadow: 2px 2px 5px darkgray;
+}
+
+form {
+    width: 80%;
+}
+
+.btn {
+    padding: 2% 2%;
+    margin-top: 1%;
+}

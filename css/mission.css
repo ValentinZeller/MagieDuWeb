@@ -1,0 +1,47 @@
+@import "navbar.css";
+@import "card.css";
+@import "homepage.css";
+@import "button.css";
+
+.mission-card {
+    padding: 2% 1%;
+    margin-left: 10%;
+    background: #F2DFAA;
+    border: 3px solid #825F00;
+}
+
+.mission-card:hover {
+    background:#FFFAED;
+}
+
+.card-html {
+    background: #C598DB;
+    margin-left: 5%;
+    padding: 0;
+    width: 50%;
+}
+
+.card-head {
+    background:#E7BCCD;
+}
+
+.card-body {
+    background: #92A5F1;
+    margin-bottom: 1%;
+}
+.drop {
+    width: 60px;
+    height: 60px;
+    background: white;
+}
+
+.drag {
+    width: 50px;
+    height: 50px;
+    background: blue;
+}
+
+.btn {
+    margin: 5% 10%;
+    padding: 1% 5%;
+}
