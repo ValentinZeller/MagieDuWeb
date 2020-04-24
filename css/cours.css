@@ -2,8 +2,8 @@
 @import "card.css";
 
 .cours {
-    background: url("../contenu/image/library.png") fixed repeat-x;
-    height: 730px;
+    background: url("../contenu/image/library.png");
+    height: 680px;
 }
 
 .cours-card {
@@ -14,3 +14,8 @@
     background: #F0EFFD;
 }
 
+@media screen and (max-height: 680px) {
+    .cours {
+        height: 100%;
+    }
+}

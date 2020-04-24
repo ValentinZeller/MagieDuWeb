@@ -1,9 +1,8 @@
 .card-element {
     display: inline-block;
-    margin-top: 5%;
     height: min-content;
-    margin-left: 20%;
-    padding: 5% 20%;
+    margin: 5% 2%;
+    padding-top: 1%;
     text-align: center;
 }
 
