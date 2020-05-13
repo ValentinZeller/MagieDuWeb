@@ -1,7 +1,7 @@
 # MagieDuWeb
 Prototype visuel d'une application ludique permettant d'apprendre les balises HTML.
 Le site est composé de 3 grandes parties :
-Cours : L'étudiant a accès à des différents cours qu'il débloque au fur et à mesure qu'il apprend à maîtriser les balises.
+Cours : L'étudiant a accès à différents cours qu'il débloque au fur et à mesure qu'il apprend à maîtriser les balises.
 
 Missions : Des exercices ludiques comme replacer les balises aux bons endroits, des questionnaires, de l'identification de balises.
 
